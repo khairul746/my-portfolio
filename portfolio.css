@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 100px;
+    padding-right: 70px;
+    margin: 0;
+}
+
+header {
+    font-weight: 600;
+    color: white;
+    background-color: #1a5cd8;
+    margin-left: -100px; 
+    margin-right: -70px;
+    padding: 20px;
+}
+
+.header {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+    padding: 20px;
+    height: 50vh;
+    background-color: #f2f5f8; 
+    border-bottom: 10px solid #111010;
+    margin-left: -100px; 
+    margin-right: -70px;
+    background-image: url(pictures/background.png);
+}
+
+header h1 {
+    height: 20px;
+    font-size: small;
+    font-family: Georgia;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.header img {
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    margin-right: 50px;
+    margin-left: 50px; 
+    border: 5px solid #1a5cd8; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    transition: transform 0.5s;
+}
+
+.header img:hover {
+    transform: scale(1.1);
+}
+
+.header p {
+    flex: 1; 
+    font-size: 18px;
+    line-height: 1.6; 
+    color: white;
+    margin: 40px;
+}
+
+.project-list {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    padding: 10px;
+    margin-bottom: 70px;
+}
+
+.project-preview figure {
+    flex: 1 1 calc(33.333% - 16px);
+    box-sizing: border-box;
+    max-width: 300px;
+    margin: 0; 
+    text-align: center; 
+}
+
+.project-preview img {
+    width: 300px; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 8px;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.project-preview img:hover {
+    opacity: 0.7;
+    transform: scale(0.9);
+}
+
+.project-preview figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+footer {
+    background-color: #1a5cd8;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-left: -100px; 
+    margin-right: -70px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.social-media-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-media-list li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.social-media-list a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-media-list a:hover {
+    color: #1e90ff; /* Change to your desired hover color */
+}
