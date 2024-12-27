@@ -10,7 +10,7 @@ header {
     background-color: #1a5cd8;
     padding: 20px;
     text-align: center;
-    width: 100vw; 
+    width: 100vw;
     margin-left: calc(-50vw + 50%);
 }
 
@@ -55,7 +55,7 @@ header h1 {
 }
 
 .header p {
-    flex: 2 1 350px;
+    flex: 2 1 400px; 
     flex: 1; 
     font-size: 18px; 
     line-height: 1.6; 
@@ -71,7 +71,7 @@ header h1 {
     }
 
     .header img {
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
         margin-right: 0; 
         width: 180px;
     }
@@ -105,7 +105,7 @@ header h1 {
 }
 
 .project-preview figure {
-    flex: 1 1 calc(100% - 40px);
+    flex: 1 1 calc(100% - 40px); 
     max-width: 300px;
     margin-left: 50px;
     margin-right: 50px;
@@ -113,7 +113,7 @@ header h1 {
 }
 
 .project-preview img {
-    width: 100%;
+    width: 100%; 
     height: 200px; 
     object-fit: cover; 
     border-radius: 8px;
@@ -152,7 +152,7 @@ h2 {
 .social-media-list {
     list-style-type: none;
     padding: 0;
-    display: flex;
+    display: flex; 
     justify-content: center; 
     flex-wrap: wrap; 
     gap: 15px; 
@@ -169,5 +169,36 @@ h2 {
 }
 
 .social-media-list a:hover {
-    color: #1e90ff; /* Change to your desired hover color */
+    color: #1e90ff; 
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        height: auto; 
+    }
+
+    .header img {
+        width: 120px; 
+        height: 120px;
+    }
+
+    .header p {
+        font-size: 14px; 
+    }
+
+    .project-preview figure {
+        flex: 1 1 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .header p {
+        font-size: 12px; 
+    }
+
+    .social-media-list {
+        flex-direction: column; 
+        gap: 10px;
+    }
 }
