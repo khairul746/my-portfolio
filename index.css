@@ -40,8 +40,8 @@ header h1 {
 }
 
 .header img {
-    width: 200px; 
-    height: 200px; 
+    width: 240px; 
+    height: 240px; 
     object-fit: cover; 
     border-radius: 50%; 
     margin-right: 50px; 
