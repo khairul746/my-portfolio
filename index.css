@@ -151,6 +151,12 @@ header h1 {
     color: #666;
 }
 
+.education-item ul {
+    margin-left: 0px;
+    font-size: 14px;
+    color: #666;
+}
+
 footer {
     background-color: #1a5cd8;
     color: #fff;
