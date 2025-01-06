@@ -106,6 +106,59 @@ header h1 {
     font-size: 14px;
     color: #666;
 }
+
+.projects-details-description {
+    margin: 20px 0; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.projects-details-description p {
+    font-size: 20px; 
+    font-weight: bold; 
+    margin-bottom: 10px;
+}
+
+.projects-details-description img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+.projects-details-description ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.projects-details-description ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .projects-details-description {
+        padding: 15px;
+    }
+
+    .projects-details-description img {
+        max-width: 90%;
+    }
+
+    .projects-details-description p {
+        font-size: 18px;
+    }
+
+    .projects-details-description ul li {
+        font-size: 14px;
+    }
+}
+
 .project-list {
     display: flex; 
     flex-wrap: wrap; 
