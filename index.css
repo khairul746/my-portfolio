@@ -132,12 +132,32 @@ header h1 {
     color: #333;
 }
 
+#education {
+    margin: 50px;
+}
+
+#education h2{
+    margin-bottom: 15px; 
+}
+
+.education-item h3 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+}
+
+.education-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
 footer {
     background-color: #1a5cd8;
     color: #fff;
     padding: 20px 0;
     text-align: center;
     margin: -20px;
+    margin-top: 20px;
 }
 
 .footer-container {
