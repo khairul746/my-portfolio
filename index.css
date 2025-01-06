@@ -94,11 +94,13 @@ header h1 {
 #projects {
     margin: 50px;
     text-align: justify;
+    line-height: 1.5;
 }
 
 #projects-details {
     margin: 50px;
     text-align: justify;
+    line-height: 1.5;
 }
 
 #projects-details ul{
@@ -199,6 +201,7 @@ header h1 {
 #education {
     margin: 50px;
     text-align: justify;
+    line-height: 1.5;
 }
 
 #education h2{
