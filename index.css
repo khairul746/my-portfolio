@@ -93,8 +93,19 @@ header h1 {
 
 #projects {
     margin: 50px;
+    text-align: justify;
 }
 
+#projects-details {
+    margin: 50px;
+    text-align: justify;
+}
+
+#projects-details ul{
+    margin-left: 0px;
+    font-size: 14px;
+    color: #666;
+}
 .project-list {
     display: flex; 
     flex-wrap: wrap; 
@@ -134,6 +145,7 @@ header h1 {
 
 #education {
     margin: 50px;
+    text-align: justify;
 }
 
 #education h2{
