@@ -110,54 +110,61 @@ header h1 {
 }
 
 .projects-details-description {
-    margin: 20px 0; 
-    padding: 20px; 
-    background-color: #f9f9f9; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin: 20px 0; /* Menambahkan margin atas dan bawah untuk ruang antar elemen */
+    padding: 20px; /* Memberikan ruang dalam pada container */
+    background-color: #f9f9f9; /* Warna latar untuk membedakan dengan elemen lain */
+    border-radius: 8px; /* Memberikan sudut melengkung */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Memberikan efek bayangan */
 }
 
-.projects-details-description p {
-    font-size: 20px; 
-    font-weight: bold; 
-    margin-bottom: 10px;
+/* Header selalu berada di atas */
+.projects-details-description-header {
+    margin-bottom: 10px; /* Jarak bawah dari header */
+    font-size: 22px; /* Ukuran font untuk judul */
+    font-weight: bold; /* Membuat teks lebih tebal */
+    text-align: center; /* Memastikan teks berada di tengah */
+    padding-bottom: 5px; /* Ruang antara teks dan garis */
 }
 
-.projects-details-description img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-    border-radius: 8px;
+/* Body layout */
+.projects-details-description-body {
+    display: flex; /* Membuat elemen dalam body menjadi flexbox */
+    flex-wrap: wrap; /* Memungkinkan elemen untuk membungkus pada layar kecil */
+    gap: 20px; /* Jarak antara elemen */
+    align-items: flex-start; /* Menjaga elemen rata atas */
 }
 
-.projects-details-description ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin: 10px 0;
+/* Gambar */
+.projects-details-description-body img {
+    max-width: 40%; /* Gambar menempati setengah lebar pada layar besar */
+    height: auto; /* Menjaga proporsi gambar */
+    border-radius: 8px; /* Membuat sudut gambar melengkung */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk estetika */
 }
 
-.projects-details-description ul li {
-    margin-bottom: 10px;
-    font-size: 16px;
-    line-height: 1.5;
+/* Daftar */
+.projects-details-description-body ul {
+    flex: 1; /* Membiarkan daftar menempati sisa ruang */
+    list-style-type: disc; /* Menggunakan bullet points */
+    padding-left: 20px; /* Padding kiri untuk daftar */
+    margin: 0; /* Menghapus margin default */
+    font-size: 16px; /* Ukuran teks */
+    line-height: 1.5; /* Memberikan spasi antar baris */
 }
 
+/* Responsif untuk layar kecil */
 @media (max-width: 768px) {
-    .projects-details-description {
-        padding: 15px;
+    .projects-details-description-body {
+        flex-direction: column; /* Menyusun elemen secara vertikal */
     }
 
-    .projects-details-description img {
-        max-width: 90%;
+    .projects-details-description-body img {
+        max-width: 100%; /* Gambar memenuhi lebar container pada layar kecil */
+        margin: 0 auto; /* Memastikan gambar berada di tengah */
     }
 
-    .projects-details-description p {
-        font-size: 18px;
-    }
-
-    .projects-details-description ul li {
-        font-size: 14px;
+    .projects-details-description-body ul {
+        margin-top: 10px; /* Jarak antara gambar dan daftar pada layar kecil */
     }
 }
 
