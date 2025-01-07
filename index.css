@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    padding: 0 20px;
+    /* padding: 0 20px; */
     margin: 0;
 }
 
@@ -10,8 +10,10 @@ header {
     background-color: #1a5cd8;
     padding: 20px;
     text-align: center;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
+    width: auto;
+    /* margin-left: calc(-50vw + 50%); */
+    /* margin: 0 calc(-50vw + 50%); */
+    box-sizing: border-box;
 }
 
 header h1 {
@@ -21,21 +23,25 @@ header h1 {
     color: white;
     margin-bottom: 15px;
 }
+h4 {
+    margin: 20px 80px;
+}
 
 .header {
     display: flex;
     flex-direction: row; 
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 80px;
     height: auto; 
     background-color: #f2f5f8; 
     border-bottom: 10px solid #111010;
     background-image: url(images/background.png);
     background-size: cover;
     background-position: center;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
+    width: auto;
+    /* margin-left: calc(-50vw + 50%); */
+    /* margin: 0 calc(-50vw + 50%); */
     box-sizing: border-box;
 }
 
@@ -83,7 +89,7 @@ header h1 {
 
 @media (max-width: 480px) {
     .header img {
-        width: 160px;
+        width: 200px;
     }
 
     .header p {
@@ -92,25 +98,27 @@ header h1 {
 }
 
 #projects {
-    margin: 50px;
+    margin: 40px 80px;
     text-align: justify;
     line-height: 1.5;
+    font-size: 18px;
 }
 
 #projects-details {
-    margin: 50px;
+    margin: 40px 80px;
     text-align: justify;
     line-height: 1.5;
+    font-size: 18px;
 }
 
 #projects-details ul{
     margin-left: 0px;
-    font-size: 14px;
+    font-size: 18px;
     color: #666;
 }
 
 .projects-details-description {
-    margin: 20px 0; /* Menambahkan margin atas dan bawah untuk ruang antar elemen */
+    margin: 48px 0; /* Menambahkan margin atas dan bawah untuk ruang antar elemen */
     padding: 20px; /* Memberikan ruang dalam pada container */
     background-color: #f9f9f9; /* Warna latar untuk membedakan dengan elemen lain */
     border-radius: 8px; /* Memberikan sudut melengkung */
@@ -180,8 +188,8 @@ header h1 {
 .project-preview figure {
     flex: 1 1 calc(100% - 40px); 
     max-width: 300px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
     text-align: center; 
 }
 
@@ -206,9 +214,9 @@ header h1 {
 }
 
 #education {
-    margin: 50px;
+    margin: 80px;
     text-align: justify;
-    line-height: 1.5;
+    line-height: 1.5;  
 }
 
 #education h2{
@@ -222,13 +230,13 @@ header h1 {
 
 .education-item p {
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
     color: #666;
 }
 
 .education-item ul {
     margin-left: 0px;
-    font-size: 14px;
+    font-size: 18px;
     color: #666;
 }
 
@@ -237,14 +245,17 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    margin: -20px;
-    margin-top: 20px;
+    width: auto;
+    /* margin: 0 -80px; */
+    /* margin: 0 calc(-50vw + 50%); */
+    box-sizing: border-box;
 }
 
 .footer-container {
-    max-width: 1200px;
+    /* max-width: 1200px; 
     margin: 0 auto;
     padding: 0 20px;
+    width: 100%;  */
 }
 
 h2 {
@@ -292,15 +303,49 @@ h2 {
     .project-preview figure {
         flex: 1 1 100%; 
     }
+    #education {
+        margin: 20px;
+        text-align: justify;
+        line-height: 1.5;  
+    }
 }
 
 @media (max-width: 480px) {
+    .header {
+        padding: 20px; 
+    }
+    .header img {
+        width: 180px; 
+        height: 180px;
+    }
+    
     .header p {
-        font-size: 12px; 
+        font-size: 14px; 
     }
 
     .social-media-list {
         flex-direction: column; 
         gap: 10px;
+    }
+    #projects {
+        margin: 20px;
+        text-align: justify;
+        line-height: 1.5;
+    }
+    
+    #projects-details {
+        margin: 20px;
+        text-align: justify;
+        line-height: 1.5;
+    }
+    #education {
+        margin: 20px;
+        text-align: justify;
+        line-height: 1.5;  
+    }
+    footer {
+        background-color: #1a5cd8;
+        color: #fff;
+        width: auto;
     }
 }
