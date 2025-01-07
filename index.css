@@ -1,6 +1,5 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    /* padding: 0 20px; */
     margin: 0;
 }
 
@@ -11,8 +10,6 @@ header {
     padding: 20px;
     text-align: center;
     width: auto;
-    /* margin-left: calc(-50vw + 50%); */
-    /* margin: 0 calc(-50vw + 50%); */
     box-sizing: border-box;
 }
 
@@ -23,8 +20,15 @@ header h1 {
     color: white;
     margin-bottom: 15px;
 }
-h4 {
+
+.skills {
+    font-family: Arial;
+    font-weight: 800;
     margin: 20px 80px;
+}
+
+.skills span {
+    font-weight: 500;
 }
 
 .header {
@@ -40,8 +44,6 @@ h4 {
     background-size: cover;
     background-position: center;
     width: auto;
-    /* margin-left: calc(-50vw + 50%); */
-    /* margin: 0 calc(-50vw + 50%); */
     box-sizing: border-box;
 }
 
@@ -118,61 +120,56 @@ h4 {
 }
 
 .projects-details-description {
-    margin: 48px 0; /* Menambahkan margin atas dan bawah untuk ruang antar elemen */
-    padding: 20px; /* Memberikan ruang dalam pada container */
-    background-color: #f9f9f9; /* Warna latar untuk membedakan dengan elemen lain */
-    border-radius: 8px; /* Memberikan sudut melengkung */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Memberikan efek bayangan */
+    margin: 48px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Header selalu berada di atas */
 .projects-details-description-header {
-    margin-bottom: 10px; /* Jarak bawah dari header */
-    font-size: 22px; /* Ukuran font untuk judul */
-    font-weight: bold; /* Membuat teks lebih tebal */
-    text-align: center; /* Memastikan teks berada di tengah */
-    padding-bottom: 5px; /* Ruang antara teks dan garis */
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 5px;
 }
 
-/* Body layout */
 .projects-details-description-body {
-    display: flex; /* Membuat elemen dalam body menjadi flexbox */
-    flex-wrap: wrap; /* Memungkinkan elemen untuk membungkus pada layar kecil */
-    gap: 20px; /* Jarak antara elemen */
-    align-items: flex-start; /* Menjaga elemen rata atas */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
 }
 
-/* Gambar */
 .projects-details-description-body img {
-    max-width: 40%; /* Gambar menempati setengah lebar pada layar besar */
-    height: auto; /* Menjaga proporsi gambar */
-    border-radius: 8px; /* Membuat sudut gambar melengkung */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk estetika */
+    max-width: 40%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-/* Daftar */
 .projects-details-description-body ul {
-    flex: 1; /* Membiarkan daftar menempati sisa ruang */
-    list-style-type: disc; /* Menggunakan bullet points */
-    padding-left: 20px; /* Padding kiri untuk daftar */
-    margin: 0; /* Menghapus margin default */
-    font-size: 16px; /* Ukuran teks */
-    line-height: 1.5; /* Memberikan spasi antar baris */
+    flex: 1; 
+    list-style-type: disc; 
+    padding-left: 20px; 
+    margin: 0; 
+    font-size: 16px; 
+    line-height: 1.5; 
 }
 
-/* Responsif untuk layar kecil */
 @media (max-width: 768px) {
     .projects-details-description-body {
-        flex-direction: column; /* Menyusun elemen secara vertikal */
+        flex-direction: column; 
     }
 
     .projects-details-description-body img {
-        max-width: 100%; /* Gambar memenuhi lebar container pada layar kecil */
-        margin: 0 auto; /* Memastikan gambar berada di tengah */
+        max-width: 100%;
+        margin: 0 auto;
     }
 
     .projects-details-description-body ul {
-        margin-top: 10px; /* Jarak antara gambar dan daftar pada layar kecil */
+        margin-top: 10px;
     }
 }
 
@@ -246,16 +243,7 @@ footer {
     padding: 20px 0;
     text-align: center;
     width: auto;
-    /* margin: 0 -80px; */
-    /* margin: 0 calc(-50vw + 50%); */
     box-sizing: border-box;
-}
-
-.footer-container {
-    /* max-width: 1200px; 
-    margin: 0 auto;
-    padding: 0 20px;
-    width: 100%;  */
 }
 
 h2 {
@@ -308,6 +296,9 @@ h2 {
         text-align: justify;
         line-height: 1.5;  
     }
+    /* h4 {
+        margin-top: 20px;
+    } */
 }
 
 @media (max-width: 480px) {
@@ -347,5 +338,8 @@ h2 {
         background-color: #1a5cd8;
         color: #fff;
         width: auto;
+    }
+    .skills {
+        margin: 20px 20px;
     }
 }
