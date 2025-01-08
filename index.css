@@ -67,8 +67,12 @@ header h1 {
     flex: 1; 
     font-size: 18px; 
     line-height: 1.6; 
-    color: white;
-    text-align: justify; 
+    color: rgb(32, 30, 30);
+    text-align: justify;
+    background-color: rgba(209,213,219,0.6);
+    backdrop-filter: blur(4px) saturate(3) contrast(1.4);
+    padding: 10px;
+    border-radius: 15px;
 }
 
 @media (max-width: 768px) {
